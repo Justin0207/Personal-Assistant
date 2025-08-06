@@ -13,7 +13,7 @@ classifier = EncoderClassifier.from_hparams(
 ).to(device)
 
 # Path to your file
-file_path = r"C:\Users\HP\Desktop\DS\Audio data\ASR\Mine\mine50.wav"
+file_path = r"<VOICE_RECORDING.wav>"
 
 # Load the audio
 signal, sr = torchaudio.load(file_path)
@@ -39,3 +39,4 @@ print(embedding)
 # Optionally save embedding
 np.save("mine_embedding.npy", embedding)
 print("Embedding saved to 'mine_embedding.npy'")
+
